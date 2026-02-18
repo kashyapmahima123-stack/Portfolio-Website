@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahima | Portfolio</title>
+  <link rel="stylesheet" href="comk.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+  <h2 class="logo">MAHIMA</h2>
+</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hello, I'm <span>Mahima Kashyap</span></h1>
+      <h3>Frontend Developer (Fresher)</h3>
+      <p>
+        I am learning web development and building projects using HTML, CSS, and JavaScript.
+        I want to start my career in IT as a Frontend Developer.
+      </p>
+
+      <div class="btn-group">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn2">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="title">About Me</h2>
+    <div class="about-content">
+      <p>
+        I am Mahima Kashyap from Saharanpur. I have completed BCA and I am improving my skills in Frontend Development.
+        I love learning new technologies and I want to work in an IT company.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2 class="title">My Skills</h2>
+    <div class="skills-box">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Basic GitHub</div>
+      <div class="skill">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2 class="title">My Projects</h2>
+
+    <div class="project-box">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio website made using HTML, CSS and JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>To-Do List App</h3>
+        <p>A simple task manager app with add and delete features.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Calculator</h3>
+        <p>A basic calculator using HTML CSS and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <p id="successMsg"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Mahi Kashyap | All Rights Reserved</p>
+  </footer>
+
+  <script src="com.js"></script>
+</body>
+</html>
